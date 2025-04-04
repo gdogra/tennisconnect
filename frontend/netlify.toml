@@ -1,0 +1,24 @@
+# Netlify configuration file
+
+# Production context: all deploys from the Production branch set in your site's
+# deploy contexts will inherit these settings.
+[build]
+  # Directory to publish (relative to root of your repo)
+  publish = "dist"
+  
+  # Default build command
+  command = "npm run build"
+
+# Redirects and rewrites
+[[redirects]]
+  # Proxy API requests to backend
+  from = "/api/*"
+  to = "https://tennisconnect-backend.railway.app/:splat"
+  status = 200
+  force = true
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

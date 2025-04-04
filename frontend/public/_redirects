@@ -1,0 +1,7 @@
+# Netlify _redirects file
+
+# Proxy API requests to backend
+/api/*  https://tennisconnect-backend.railway.app/:splat  200
+
+# SPA fallback - handle client-side routing
+/*  /index.html  200
