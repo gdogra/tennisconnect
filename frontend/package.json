@@ -1,37 +1,29 @@
 {
-  "name": "frontend",
-  "private": true,
-  "version": "0.0.0",
+  "name": "singlestennis-frontend",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "npm run validate-env && vite build",
+    "preview": "vite preview",
+    "validate-env": "node scripts/validate-env.js"
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.20.6",
-    "@react-oauth/google": "^0.12.1",
-    "chart.js": "^4.4.8",
-    "jwt-decode": "^4.0.0",
-    "react": "^19.0.0",
-    "react-chartjs-2": "^5.3.0",
-    "react-dom": "^19.0.0"
+    "autoprefixer": "^10.4.17",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-easy-crop": "^5.2.2",
+    "react-router-dom": "^6.21.1",
+    "react-toastify": "^9.1.3",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.21.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "framer-motion": "^12.6.3",
-    "globals": "^15.15.0",
-    "postcss": "^8.5.3",
-    "react-router-dom": "^7.4.1",
-    "tailwindcss": "^4.1.2",
-    "vite": "^6.2.0"
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "^8.4.38",
+    "vite": "^6.2.5"
   }
 }
+
