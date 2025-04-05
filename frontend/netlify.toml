@@ -1,9 +1,7 @@
-# Netlify configuration file
-
 [build]
   base = "frontend"
-  publish = "frontend/dist"
   command = "npm run build"
+  publish = "frontend/dist"
 
 [[redirects]]
   from = "/api/*"
